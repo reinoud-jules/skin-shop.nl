@@ -924,7 +924,7 @@ section#cart table td span.delivery {
 section#cart table td span.stock.yes {
 	color: #85D651;
 	padding-left: 22px;
-	background-image: url('/img/checkmark-green.png');
+	background-image: url('img/checkmark-green.png');
 	background-repeat: no-repeat;
 	background-position: left center;
 }
@@ -1167,7 +1167,7 @@ section#usps article#questions h1 {
 	section#cart table button.sub_info {
 		display: inline;
 		padding-left: 22px;
-		background-image: url('/img/checkmark-green.png');
+		background-image: url('img/checkmark-green.png');
 		background-repeat: no-repeat;
 		background-position: left center;
 		border: 2px solid #85D651;
@@ -1359,7 +1359,7 @@ section.product_section section#q-and-a div.replies > div.official_reply {
 	border-radius: 12px;
 	padding: 18px 18px 5px 18px;
 	margin-top: 4px;
-	background-image: url('/img/skin-shop-logo-350.jpg');
+	background-image: url('img/skin-shop-logo-350.jpg');
 	background-repeat: no-repeat;
 	background-position: top right;
 	background-size: 117px 33px;
@@ -1386,7 +1386,7 @@ section.product_section article:last-of-type {
 
 section.product_section div.end {
 	text-align: center;
-	background-image: url('/img/footer-stroke.jpg');
+	background-image: url('img/footer-stroke.jpg');
 	background-repeat: repeat-x;
 	background-position: center center;
 }
@@ -1416,7 +1416,7 @@ section.product_section article div.summary ul {
 
 section.product_section article div.main span.recommend {
 	padding-left: 15px;
-	background-image: url('/img/recommend.jpg');
+	background-image: url('img/recommend.jpg');
 	background-repeat: no-repeat;
 	background-position: center left;
 }
@@ -1607,7 +1607,7 @@ div#viewport ul#thumbs li img {
 }
 
 section#versions header {
-	background-image: url('/img/footer-stroke.jpg');
+	background-image: url('img/footer-stroke.jpg');
 	background-repeat: repeat-x;
 	background-position: center center;
 }
@@ -1776,7 +1776,7 @@ section#product_overview div.add_to_cart span.stock {
 	font-size: 17px;
 	color: #85D651;
 	padding-left: 22px;
-	background-image: url('/img/checkmark-green.png');
+	background-image: url('img/checkmark-green.png');
 	background-repeat: no-repeat;
 	background-position: left center;
 }
@@ -1851,7 +1851,7 @@ section#product_overview div.add_to_cart span.sale {
 	color: #4FABA5;
 	padding-right: 13px;
 	font-weight: 300;
-	background-image: url('/img/strike-through.jpg');
+	background-image: url('img/strike-through.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -2059,7 +2059,7 @@ footer div#kiyoh > div {
 }
 
 footer div#stroke {
-	background-image: url('/img/footer-stroke.jpg');
+	background-image: url('img/footer-stroke.jpg');
 	background-repeat: repeat-x;
 	background-position: center center;
 	font-size: 12px;
@@ -2293,7 +2293,7 @@ div.prod_grid article.sale span.sale {
 	font-size: 18px;
 	width: 65px;
 	height: 50px;
-	background-image: url('/img/sale.png');
+	background-image: url('img/sale.png');
 	background-repeat: no-repeat;
 }
 
@@ -3092,7 +3092,7 @@ header section#shopping_bag {
 	padding: 9px 15px 15px 60px;
 	font-size: 13px;
 	cursor: pointer;
-	background-image: url('/img/shopping-bag.jpg');
+	background-image: url('img/shopping-bag.jpg');
 	background-repeat: no-repeat;
 	background-position: left center;
 }
