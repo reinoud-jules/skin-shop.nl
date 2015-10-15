@@ -1,0 +1,545 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Skin-shop.nl</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="/js/vendor/fancybox/jquery.fancybox.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="/js/vendor/swiper/css/swiper.min.css">
+		<link rel="stylesheet" href="/js/vendor/jquery-ui/jquery-ui.min.css">
+		<link rel="stylesheet" href="/js/vendor/jquery-ui/jquery-ui.structure.min.css">
+		<link rel="stylesheet" href="/js/vendor/jquery-ui/jquery-ui.theme.min.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <!-- Typekit font: -->
+        
+        <script src="https://use.typekit.net/kcu1qnc.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<header class="">
+			<div>
+				<nav>
+					<ul id="main">
+						<li><a href="/" class="home"><img src="/img/skin-shop-logo-350.jpg"></a></li>
+						<li><a href="/producten/nieuw">Nieuw</a></li>
+						<li><a href="/producten/gezicht">Gezicht</a></li>
+						<li><a href="/producten/lichaam">Lichaam</a></li>
+						<li><a href="/producten/make-up">Make-up</a></li>
+						<li><a href="/producten/merken">Merken</a></li>
+						<li id="sale"><a href="/producten/sale">Sale</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+					<ul id="sub">
+						<li> <!-- Submenu 'nieuw' -->
+							<ul>
+								<li class="header">Nieuw</li>
+								<li><a href="/producten/nieuw">Nieuw binnen</a></li>
+							</ul>
+						</li>
+						<li> <!-- Submenu 'gezicht' -->
+							<ul>
+								<li class="header">Gezicht</li>
+								<li><a href="/producten/gezicht/cleanser">Cleanser</a></li>
+								<li><a href="/producten/gezicht/toner">Toner</a></li>
+								<li><a href="/producten/gezicht/moisturizer">Moisturizer</a></li>
+								<li><a href="/producten/gezicht/maskers">Maskers</a></li>
+								<li><a href="/producten/gezicht/tanden">Tanden</a></li>
+								<li><a href="/producten/gezicht/lippen">Lippen</a></li>
+							</ul>
+						</li>
+						<li> <!-- Submenu 'lichaam' -->
+							<ul>
+								<li class="header">Lichaam</li>
+								<li><a href="/producten/lichaam/bad-en-douche">Bad &amp; douche</a></li>
+								<li><a href="/producten/lichaam/cleanser">Cleanser</a></li>
+								<li><a href="/producten/lichaam/lotions">Lotions</a></li>
+								<li><a href="/producten/lichaam/handen">Handen</a></li>
+								<li><a href="/producten/lichaam/voeten">Voeten</a></li>
+								<li><a href="/producten/lichaam/massage">Massage</a></li>
+								<li><a href="/producten/lichaam/scheren">Scheren</a></li>
+								<li><a href="/producten/lichaam/deoderant">Deoderant</a></li>
+								<li><a href="/producten/lichaam/poeder">Poeder</a></li>
+								<li><a href="/producten/lichaam/teint">Teint</a></li>
+							</ul>
+						</li>
+						<li> <!-- Submenu 'make-up' -->
+							<ul>
+								<li class="header">Make-up</li>
+								<li><a href="/producten/make-up/ogen">Ogen</a></li>
+								<li><a href="/producten/make-up/lippen">Lippen</a></li>
+								<li><a href="/producten/make-up/wenkbrauwen">Wenkbrauwen</a></li>
+								<li><a href="/producten/make-up/foundation">Foundation</a></li>
+								<li><a href="/producten/make-up/concealer">Concealer</a></li>
+							</ul>
+						</li>
+						<li> <!-- Submenu 'merken' -->
+							<ul>
+								<li class="header">Merken</li>
+								<li><a href="/producten/merken/pascaud">Pascaud</a></li>
+								<li><a href="/producten/merken/la-colline">La Colline</a></li>
+								<li><a href="/producten/merken/youngblood">Youngblood</a></li>
+								<li><a href="/producten/merken/laviesage">LavieSage</a></li>
+								<li><a href="/producten/merken/murad">Murad</a></li>
+								<li><a href="/producten/merken/cell-fusion-c">Cell Fusion C</a></li>
+								<li><a href="/producten/merken/neoderma">Neoderma</a></li>
+							</ul>
+						</li>
+						<li> <!-- Submenu 'Sale' -->
+							<ul id="sale">
+								<li class="header">Sale</li>
+								<li><a href="/producten/sale/zomersale">Zomersale 20%</a></li>
+								<li><a href="/korting-verdienen">Korting verdienen</a></li>
+							</ul>
+						</li>
+						<li id="account"> <!-- submenu 'Account' (only in responsive) -->
+							<ul>
+								<li class="header">Mijn account</li>
+								<li><a href="/account">Naar mijn account</a></li>
+								<li><a href="/account/logout">Uitloggen</a></li>
+							</ul>
+						</li>
+						<li id="contact"> <!-- Submenu 'Contact' -->
+							<ul>
+								<li class="header">Contact</li>
+								<li>T: 06 104 33 489</li>
+								<li>E: <a href="mailto:info@skin-shop.nl">info@skin-shop.nl</a></li>
+								<li>&nbsp;</li>
+								<li class="contact"><a href="/contact">Alle gegevens</a></li>
+								
+								<li class="social_media">
+									<a href="#"><img src="/img/facebook-icon.jpg"></a>
+								</li>
+								<li class="social_media">
+									<a href="#"><img src="/img/twitter-icon.jpg"></a>
+								</li>
+								<li class="social_media">
+									<a href="#"><img src="/img/youtube-icon.jpg"></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="mobile">
+						<li><a href="/" class="menu"><img src="/img/skin-shop-menu.jpg"><img id="close" src="/img/skin-shop-menu-sluiten.jpg"><span> Menu<span> sluiten</span></span></a></li>
+					</ul>
+				</nav>
+				<section id="search">
+					<form id="search">
+						<div><input name="keywords" type="text" placeholder="Ik ben op zoek naar / heb last van..."> <input type="submit" value="Zoeken →"></div>
+						<span id="popular_terms">Anderen zochten op <a href="#">droge huid</a> &bull; <a href="#">acné</a> &bull; <a href="#">rimpels</a> &bull; <a href="#">zonnebrand</a> &bull; <a href="#">anti-aging</a></span>
+					</form>
+				</section>
+				<section id="shopping_bag">
+					<label>Shopping<br>bag</label>
+					<ul>
+						<li><a href="/shopping-bag">3 producten</a></li>
+						<li id="order_total">€ <span>29,55</span></li>
+						<li><strong>gratis verzending</strong></li>
+						<li class="checkout">&nbsp;</li>
+						<li class="checkout"><a href="/checkout">Afrekenen</a></li>
+				</section>
+			</div>
+			<section id="usp_bar">
+				<h1>gratis verzending &mdash; eenvoudig retourneren &mdash; betaal veilig met iDeal, credit card of PayPal &mdash; geen registratie vereist</h1><span class="responsive"> &mdash; </span><br class="responsive"><span id="kiyoh"><img src="/img/kiyoh-rating-small.jpg"> <span id="kiyoh_rating">9,3</span> op basis van  <span id="kiyoh_reviews">88</span> reviews</span>
+				<a id="account" href="/account">mijn account</a>
+			</section>
+
+			<section id="breadcrumb">
+				<ul>
+					<li class="here"><a href="/">Home</a></li>
+					<li class=""><a href="/">Producten</a></li>
+					<li class=""><a href="/">Make-up</a></li>
+					<li class=""><a href="/">Foundations</a></li>
+				</ul>
+			</section>
+		</header>
+
+
+		<section id="product_overview">
+			<div class="inner_wrap">
+				<header>
+					<h2>Youngblood</h2>
+					<h1>Natural Loose Mineral Foundation</h1>
+					<a href="/producten/youngblood"><img src="/img/youngblood-low-res.png"></a>
+				</header>
+				<div id="reviews_questions">
+					<a href="#reviews"><img src="/img/ratings/4-ster.jpg"> 17 reviews</a> | <a href="#vraag-antwoord">3 vragen en antwoorden</a>
+				</div>
+				
+				<section id="content">
+					<section id="main">
+						<p>Het topproduct van Youngblood Cosmetics, hoort absoluut thuis in elk make-up tasje.</p>
+	
+	<p>Natural Mineral Foundation is een lichte en zijdezachte foundation, die werkt als concealer, foundation en poeder ineen. Het resultaat is een natuurlijke en egale teint, met de mogelijkheid een gevarieerde dekking te creeeren. Blijft er de hele dag fris en natuurlijk uitzien, zelfs als u druk in de weer bent.</p>
+	
+	<p>Bevat geen conserveringsmiddelen, parfum, olie of talk. Verkrijgbaar in 16 tinten, van licht naar donker en van koel tot warm.</p>
+					</section>
+					<section id="aspects">
+						<div>
+							<h3>Merk</h3>
+							<p><a href="/producten/younblood">YoungBlood</a></p>
+						</div>
+						<div>
+							<h3>Inhoud</h3>
+							<p>10 gram</p>
+						</div>
+						<div>
+							<h3>Artikelnummer</h3>
+							<p>01001 t/m 01016</p>
+						</div>
+						<div>
+							<h3>Aanbevolen brush</h3>
+							<p>Large Kabuki Brush, Small Kabuki Brush, Ultimate Foundation Brush en Super Powder Brush</p>
+						</div>
+					</section>
+					<section id="versions">
+						<h2>Uitvoeringen</h2>
+						<div>
+							<header>
+								<h3>Brights</h3>
+							</header>
+							<ul>
+								<li class="selected" title="">
+									<img src="/img/nmf-sunglow.png"> <span>Sunglow</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Mahogany</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Hazelnut</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<header>
+								<h3>Contour</h3>
+							</header>
+							<ul>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Warm Beige</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Tawnee</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Rose Beige</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Toffee</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Fawn</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<header>
+								<h3>High Lighter</h3>
+							</header>
+							<ul>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Pearl</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Cool Beige</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Ivory</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Neutral</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<header>
+								<h3>Lid</h3>
+							</header>
+							<ul>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Barley Beige</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Soft Beige</span>
+								</li>
+								<li title="">
+									<img src="/img/nmf-sunglow.png"> <span>Honey</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				
+				<section id="gallery">
+					<div class="add_to_cart">
+						<h1>Youngblood <strong>Natural Loose Mineral Foundation</strong></h1>
+						Uitvoering: <span class="version">Sunglow</span> <span class="stock">op voorraad</span><br>
+						<span class="sale">€64,00</span> <span class="current_price">€59,50</span> <span class="piece">/st.</span>
+						<form class="add_to_cart">
+							aantal <button class="less"><img src="/img/button-less.jpg"></button><input value="1" type="text" class="amount"><button class="more"><img src="/img/button-more.jpg"></button> <input type="submit" class="cta" value="In winkelmandje →">
+						</form>
+					</div>
+					<div id="viewport">
+						<img src="/img/Loose-Foundation.jpg" id="main">
+						<ul id="thumbs">
+							<li class="selected"><img src="/img/youngblood-thumb-01.jpg" data-big-image="/img/Loose-Foundation.jpg"></li>
+							<li><img src="/img/youngblood-thumb-02.jpg" data-big-image="/img/youngblood-natural-loose-mineral-foundation.jpg"></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		
+		<section id="video" class="product_section">
+			<div class="inner_wrap">
+				<h1>Gebruik &amp; tutorials</h1>
+				<a class="various fancybox.iframe" href="http://www.youtube.com/embed/8PPtIgpZTPU?autoplay=1">
+			        <img src="/img/posters/youngblood-natural-loose-mineral-tutorail.jpg">
+		        </a>
+		        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/8PPtIgpZTPU?autoplay=1">
+			        <img src="/img/posters/foundation-aanbrengen.jpg">
+		        </a>
+			</div>
+		</section>
+		
+		<section id="reviews_questions" class="product_section">
+			
+			<div class="inner_wrap">
+				<section id="reviews">
+					<header>
+						<h1>Reviews (17) <a class="cta" href="#">Schrijf review →</a></h1> 
+						<h2>Youngblood <strong>Natural Loose Mineral Foundation</strong></h2>
+						<h2>Gemiddelde beoordeling <img src="/img/ratings/large/4-stars.jpg"></h2>
+					</header>
+					
+					<article>
+						<div class="main">
+							<h1><img src="/img/ratings/large/5-stars.jpg"> "uitstekende dekking"</h1>
+							<a href="#">Jacqueline04</a> <span class="recommend">raadt dit product aan</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Universa enim illorum ratione cum tota vestra confligendum puto. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Invidiosum nomen est, infame, suspectum. Ille incendat?</p>
+
+<p>Hoc non est positum in nostra actione. Duo Reges: constructio interrete. Aliter autem vobis placet. Hanc quoque iucunditatem, si vis, transfer in animum; Quo modo autem optimum, si bonum praeterea nullum est? Nam si amitti vita beata potest, beata esse non potest.</p>
+						</div>
+						<div class="summary">
+							<h2>22 augustus 2015</h2>
+							<br>
+							<strong>Pluspunten</strong>
+							<ul>
+								<li>+ goede dekking</li>
+								<li>+ stevig doosje</li>
+								<li>+ prijs/kwaliteit</li>
+							</ul>
+							
+							<strong>Minpunten</strong>
+							<ul>
+								<li>Geen</li>
+							</ul>
+						</div>
+					</article>
+					
+					<article>
+						<div class="main">
+							<h1><img src="/img/ratings/large/4-stars.jpg"> "kleur wijkt af verder goed"</h1>
+							<a href="#">Jacqueline04</a> <span class="recommend">raadt dit product aan</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Universa enim illorum ratione cum tota vestra confligendum puto. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Invidiosum nomen est, infame, suspectum. Ille incendat?</p>
+
+<p>Hoc non est positum in nostra actione. Duo Reges: constructio interrete. Aliter autem vobis placet. Hanc quoque iucunditatem, si vis, transfer in animum; Quo modo autem optimum, si bonum praeterea nullum est? Nam si amitti vita beata potest, beata esse non potest.</p>
+							<div class="official_reply">
+								<strong>Reactie van Skin-shop.nl</strong>
+								<div>
+									<strong>Karin Manders &mdash; Skin-shop.nl</strong>
+									<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Universa enim illorum ratione cum tota vestra confligendum puto. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Invidiosum nomen est, infame, suspectum. Ille incendat?"</p>
+								</div>
+							</div>
+						</div>
+						<div class="summary">
+							<h2>22 augustus 2015</h2>
+							<br>
+							<strong>Pluspunten</strong>
+							<ul>
+								<li>+ prijs/kwaliteit</li>
+							</ul>
+							
+							<strong>Minpunten</strong>
+							<ul>
+								<li>- kleur wijkt af</li>
+							</ul>
+						</div>
+					</article>
+					
+					<article>
+						<div class="main">
+							<h1><img src="/img/ratings/large/1-star.jpg"> "blijft niet zitten en ruikt gek"</h1>
+							<a href="#">Jacqueline04</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Universa enim illorum ratione cum tota vestra confligendum puto. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Invidiosum nomen est, infame, suspectum. Ille incendat?</p>
+
+<p>Hoc non est positum in nostra actione. Duo Reges: constructio interrete. Aliter autem vobis placet. Hanc quoque iucunditatem, si vis, transfer in animum; Quo modo autem optimum, si bonum praeterea nullum est? Nam si amitti vita beata potest, beata esse non potest.</p>
+						</div>
+						<div class="summary">
+							<h2>22 augustus 2015</h2>
+							<br>
+							<strong>Pluspunten</strong>
+							<ul>
+								<li>Geen</li>
+							</ul>
+							
+							<strong>Minpunten</strong>
+							<ul>
+								<li>- ruikt gek</li>
+								<li>- blijf niet zitte</li>
+							</ul>
+						</div>
+					</article>
+					<div class="end">
+						<a href="#">↓ meer reviews tonen</a>
+					</div>
+				</section>
+				<section id="q-and-a">
+					<h1>Vraag en antwoord (3) <a class="cta" href="#">Stel een vraag →</a></h1>
+					<article>
+						<header>
+							<strong>Arnold</strong><span class="date">22 augustus 2015</span>
+						</header>
+						<p>"Hoc non est positum in nostra actione. Duo Reges: constructio interrete. Aliter autem vobis placet. Hanc quoque iucunditatem, si vis, transfer in animum; Quo modo autem optimum, si bonum praeterea nullum est? Nam si amitti vita beata potest, beata esse non potest?"</p>
+						<div class="replies">
+							<strong>2 antwoorden</strong>
+							<div>
+								<strong>Jacqueline04</strong>
+								<p>"Hoc non est positum in nostra actione. Duo Reges: constructio interrete. Aliter autem vobis placet. Hanc quoque iucunditatem, si vis, transfer in animum; Quo modo autem optimum, si bonum praeterea nullum est? Nam si amitti vita beata potest, beata esse non potest?"</p>
+							</div>
+							<div class="official_reply">
+								<strong>Karin Manders &mdash; Skin-shop.nl</strong>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Universa enim illorum ratione cum tota vestra confligendum puto. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Invidiosum nomen est, infame, suspectum. Ille incendat?</p>
+
+<p>Hoc non est positum in nostra actione. Duo Reges: constructio interrete. Aliter autem vobis placet. Hanc quoque iucunditatem, si vis, transfer in animum; Quo modo autem optimum, si bonum praeterea nullum est? Nam si amitti vita beata potest, beata esse non potest."</p>
+							</div>
+							<a class="cta" href="#">Antwoord toevoegen →</a>
+						</div>
+					</article>
+					<article>
+						<header>
+							<strong>Emerald2009</strong><span class="date">21 augustus 2015</span>
+						</header>
+						<p>"Hoc non est positum in nostra actione. Beata esse non potest?"</p>
+						<div class="replies">
+							<a class="cta" href="#">Antwoord toevoegen →</a>
+						</div>
+					</article>
+					<article>
+						<header>
+							<strong>Emerald2009</strong><span class="date">21 augustus 2015</span>
+						</header>
+						<p>"Hoc non est positum in nostra actione. Beata esse non potest?"</p>
+						<div class="replies">
+							<strong>1 antwoord</strong>
+							<div class="official_reply">
+								<strong>Karin Manders &mdash; Skin-shop.nl</strong>
+				<p>"Duo Reges: constructio interrete. Aliter autem vobis placet. Hanc quoque iucunditatem, si vis, transfer in animum; Quo modo autem optimum, si bonum praeterea nullum est? Nam si amitti vita beata potest, beata esse non potest."</p>
+							</div>
+							<a class="cta" href="#">Antwoord toevoegen →</a>
+						</div>
+					</article>
+					<div class="end">
+						<a href="#">↓ meer vragen/antwoorden tonen</a>
+					</div>
+				</section>
+			</div>
+		</section>
+		
+		
+		<footer>
+			<div id="back_to_top">
+				<a class="cta" href="#top">Terug naar boven ↑</a>
+			</div>
+			<div id="stroke">
+				<div class="inner_wrap">
+					<span><img src="/img/skin-shop-logo-350.jpg"> Copyright &copy; Skin-shop.nl &mdash; Alle rechten voorbehouden.</span>
+				</div>
+			</div>
+			<div class="inner_wrap">
+				<section id="summary">
+					<strong>Skin-shop.nl</strong> is sinds 2011 gespecialiseerd in producten voor <strong>huidverbetering, anti-aging, make-up</strong> en <strong>diëetproducten</strong>. 
+Wij streven naar een ideale gebruikservaring, dus <strong>verzending is altijd gratis</strong> zonder minimumbesteding en je hoeft je <strong>niet te registreren</strong> om een bestelling te kunnen plaatsen.
+					
+					<hr>
+					<div id="kiyoh">
+						<img src="/img/kiyoh-rating-large.jpg">
+						<div>
+							<span class="rating">9,3</span>
+							<span class="review_count">88 reviews</span>
+						</div>
+						<p>Lees wat anderen van <strong>Skin-shop.nl</strong> vinden op onze <a href="#">Kiyoh-pagina</a>, waar we een <strong>gemiddeld met een <span class="rating">9,3</span></strong> worden beoordeeld door <span class="review_count">88</span> personen.</p>
+					</div>
+				</section>
+				<div id="service">
+					<h2>Klantenservice</h2>
+					<ul>
+						<li><a href="/faq">Veelgestelde vragen</a></li>
+						<li><a href="/bestelling-levering">Bestelling &amp; levering</a></li>
+						<li><a href="/betaalmogelijkheden">Betaalmogelijkheden</a></li>
+						<li><a href="/retourneren">Retourneren</a></li>
+						<li>&nbsp;</li>
+						<li><a href="/algemene-voorwaarden">Algemene voorwaarden</a></li>
+						<li><a href="/privacy">Privacy</a></li>
+						<li>&nbsp;</li>
+						<li>Verdien eenvoudig:</li>
+						<li><a class="cta" href="/nieuwsbrief">€7,50 shoptegoed</a></li>
+					</ul>
+				</div>
+				<div id="address">
+					<h2>Skin-shop.nl</h2>
+					is een onderdeel van<br>
+					<strong><a href="http://salonintense.nl" target="_blank">Intense Skin &amp; Body Improvement</a></strong>
+					<br><br>
+					Laarhof 22<br>
+					5388 GX Nistelrode<br>
+					<a href="mailto:info@skin-shop.nl">info@skin-shop.nl</a><br>
+					06 104 33 489<br><br>
+					<ul>
+						<li><a href="/over-ons">Over ons</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+				<div id="social">
+					<ul>
+						<li class="social_media">
+							<a href="#"><img src="/img/facebook-icon.jpg"></a>
+						</li>
+						<li class="social_media">
+							<a href="#"><img src="/img/twitter-icon.jpg"></a>
+						</li>
+						<li class="social_media">
+							<a href="#"><img src="/img/youtube-icon.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="/js/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/vendor/swiper/js/swiper.jquery.min.js"></script>
+		<script src="/js/vendor/jquery-ui/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
