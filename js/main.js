@@ -20,6 +20,8 @@ var scroll_timeout = 2000;
 var scroll_int;
 
 $(document).ready(function() {
+	
+	
 	/* ===================================== */
 	/* >>>>>>>> ACCOUNT
 	/* ===================================== */
@@ -76,8 +78,9 @@ $(document).ready(function() {
 		maxWidth	: 1280,
 		maxHeight	: 720,
 		fitToView	: false,
-		width		: '70%',
+		width		: '90%',
 		height		: '70%',
+		maxWidth	: 1400,
 		autoSize	: false,
 		closeClick	: false,
 		openEffect	: 'none',

@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Skin-shop.nl vraag</title>
+		<link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/validate.js"></script>
+        <script src="js/review.js"></script>
+	</head>
+	<body>
+		<section id="checkout" class="iframe">
+			<form class="validate" id="question">
+			<section id="formfields">
+					<div id="bezorgadres">
+						<h2>Stel hier uw vraag</h2>
+
+						<label>Uw naam<br>
+						<input type="text" name="achternaam" class="required" data-format="name"></label>
+						
+						<label class="" id="">E-mailadres (wordt niet vermeld)<br>
+						<input type="text" name="e-mail" class="required" value="" data-format="email"> 
+						</label>
+						
+						<label class="clear" id="review">Vraag (<span id="review_count" class="count negative">-50</span>)<br>
+						<textarea data-format="review" id="review" class="required"></textarea></label>
+						
+						
+						<div id="actions">
+							<input type="submit" value="Plaats vraag" class="cta">
+						</div>
+						
+					</div>
+			</section>
+			</form>
+		</section>
+	</body>
+</html>

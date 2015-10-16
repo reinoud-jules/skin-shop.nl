@@ -3,7 +3,7 @@ $(document).ready(function() {
 	/* >>>>>>>> GENERAL VALIDATION on KEYUP EVENT
 	/* ===================================== */
 	
-	$("form.validate input").keyup(function() {
+	$("form.validate input, form.validate textarea").keyup(function() {
 		if($(this).hasClass("required")) {
 			validate_form_field($(this));
 		} else {
@@ -11,7 +11,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	$("form.validate input[type='text']:not(.no_validation)").focusout(function() {
+	$("form.validate input[type='text']:not(.no_validation), form.validate textarea").focusout(function() {
 		if($(this).hasClass("required")) {
 			validate_form_field($(this));
 		} else {
@@ -80,6 +80,27 @@ $(document).ready(function() {
 		
 	});
 	
+	/* ===================================== */
+	/* >>>>>>>> REVIEW & QUESTION FORMS
+	/* ===================================== */
+	
+	$("form.validate#review input[type='submit'], form.validate#question input[type='submit']").click(function(a) {
+		var pass = true;
+		console.log("WHeel");
+		
+		$("form.validate input[type='text'].required, form.validate textarea").each(function() {
+			var success = validate_form_field($(this));
+			if(!success) {
+				pass = false;
+			}
+		});
+		
+		if(!pass) {
+			a.preventDefault();
+			alert("Niet alle velden zijn correct ingevuld. Controleer de rood-omlijnde velden.");
+		}
+	});
+	
 });
 
 function validate_form_field($tar) {
@@ -123,6 +144,12 @@ function validate_form_field($tar) {
 		case "password_check" :
 			ret = val_password(val, $tar, true);
 			break;
+		case "title" :
+			ret = val_title(val, $tar);
+			break;
+		case "review" :
+			ret = val_review(val, $tar);
+			break;
 		default :
 			console.log("No datatype for form validation supplied.");
 			ret = true;
@@ -156,6 +183,30 @@ function val_password(val, $tar, check) {
 		}
 	}
 	
+}
+
+function val_title(val, $tar) {
+	if(val.length < 15) {
+		$tar.addClass("error").removeClass("success");
+		$tar.parent().addClass("error");
+		return false;
+	} else {
+		$tar.removeClass("error").addClass("success");
+		$tar.parent().removeClass("error");
+	}
+	return true;
+}
+
+function val_review(val, $tar) {
+	if(val.length < 50 || val.length > 500) {
+		$tar.addClass("error").removeClass("success");
+		$tar.parent().addClass("error");
+		return false;
+	} else {
+		$tar.removeClass("error").addClass("success");
+		$tar.parent().removeClass("error");
+	}
+	return true;
 }
 
 function val_string(val, length, $tar) {

@@ -85,7 +85,8 @@ a.cta.small {
    Author's custom styles
    ========================================================================== */
 
-form.validate input.error {
+form.validate input.error,
+form.validate textarea.error {
 	border-color: red !important;
 }
 
@@ -671,9 +672,19 @@ section#checkout div#ideal_bank.error h2 {
 	color: red;
 }
 
-section#checkout {
+section#checkout:not(.iframe) {
 	margin-bottom: 190px;
 }
+
+section#checkout form#review select {
+	margin-top: 3px;
+}
+
+section#checkout form#review div#stars img {
+	margin-top: 16px;
+	margin-left: 5px;
+}
+
 
 section#checkout div#options {
 	clear: both;
@@ -827,7 +838,8 @@ section#checkout label.clear {
 }
 
 section#checkout label input[type='text'],
-section#checkout input[type='password'] {
+section#checkout input[type='password'],
+section#checkout textarea {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 4px;
@@ -837,6 +849,15 @@ section#checkout input[type='password'] {
 	border-radius: 5px;
 	border: 1px solid #CECECE;
 	background-color: #F2F4F4;
+}
+
+section#checkout textarea {
+	height: 100px;
+}
+
+
+section#checkout label#review {
+	width: 100%;
 }
 
 section#checkout input[type='password'] {
