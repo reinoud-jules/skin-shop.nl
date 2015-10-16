@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <script src="js/validate.js"></script>
         <script src="js/review.js"></script>
 	</head>
@@ -24,7 +25,8 @@
 						
 						<label class="clear" id="review">Vraag (<span id="review_count" class="count negative">-50</span>)<br>
 						<textarea data-format="review" id="review" class="required"></textarea></label>
-						
+						<br>
+						<div class="g-recaptcha" data-sitekey="6Lew9Q4TAAAAALO-yJ1Vght2OcM81_blH8pmN4wR"></div><br><br>
 						
 						<div id="actions">
 							<input type="submit" value="Plaats vraag" class="cta">

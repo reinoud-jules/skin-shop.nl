@@ -84,6 +84,11 @@ a.cta.small {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+div.g-recaptcha {
+	min-height: 55px;
+	float: left;
+}
 
 form.validate input.error,
 form.validate textarea.error {
