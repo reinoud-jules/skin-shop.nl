@@ -217,8 +217,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	
-	
+
 	if($("div#datepicker").length != 0) {
 		var today = new Date();
 		$("div#datepicker").datepicker({
@@ -359,7 +358,7 @@ function update_dimensions() {
 	ww = $(window).width();
 	wh = $(window).height();
 	fh = $("body > footer").height();
-	console.log("ww: " + ww);
+
 	if(ww <= 490) {
 		$("div.prod_grid").removeClass("list");
 	}
