@@ -1989,7 +1989,7 @@ section#product_overview div.add_to_cart h1 {
 		background-color: #FFF;
 		box-shadow: 1px 0px 9px 1px rgba(0, 0, 0, 0.22);
 		transition: opacity 1s;
-		
+		z-index: 999;
 	}
 	
 	section#product_overview div.add_to_cart h1 {
