@@ -141,7 +141,7 @@ $(document).ready(function() {
 	});
 	
 	/* ===================================== */
-	/* >>>>>>>> CART AUTOMATION
+	/* >>>>>>>> CART & CHECKOUT AUTOMATION
 	/* ===================================== */
 	
 	$("section#cart table td button.info").each(function() {
@@ -173,6 +173,29 @@ $(document).ready(function() {
 			$("div#options div#factuuradres").removeClass("show");
 		} else {
 			$("div#options div#factuuradres").addClass("show");
+		}
+	});
+	
+	$("input#register").change(function() {
+		if(!this.checked) {
+			$("div#options div#password").removeClass("show");
+		} else {
+			$("div#options div#password").addClass("show");
+		}
+	});
+	
+	$("div#method input[name='method']").change(function() {
+		$("div#method label").removeClass("error");
+		if($(this).val() == "ideal") {
+			$("div#ideal_bank").removeClass("hidden");
+		} else {
+			$("div#ideal_bank").addClass("hidden");
+		}
+	});
+	
+	$("div#ideal_bank select").change(function() {
+		if($(this).val() != 0) {
+			$("div#ideal_bank").removeClass("error");
 		}
 	});
 	

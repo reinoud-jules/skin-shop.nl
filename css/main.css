@@ -85,6 +85,25 @@ a.cta.small {
    Author's custom styles
    ========================================================================== */
 
+form.validate input.error {
+	border-color: red !important;
+}
+
+form.validate input.error:focus {
+	outline: none;
+	box-shadow: 0 0 10px red;
+}
+
+form.validate input.success {
+	border-color: #2bdd2b !important;
+	background-color: #dbf9dd !important;
+}
+
+form.validate input.success:focus {
+	outline: none;
+	box-shadow: 0 0 10px #2bdd2b;
+}
+
 section#cart table td.track_trace,
 section#cart table th.track_trace {
 	text-align: right;
@@ -368,8 +387,26 @@ section#filters div.active h2 a {
 	float: right;
 }
 
-a.cta.final_step {
+a.cta.final_step, input.cta.final_step {
 	font-size: 22px;
+	background-color: #FF741F !important;
+	color: #FFF !important;
+}
+
+input.cta.right {
+	float: right;
+	width: 100%;
+	font-size: 17px;
+	background-color: #FF741F !important;
+	color: #FFF !important;
+
+}
+
+@media all and (max-width: 600px) {
+	input.cta.final_step {
+		font-size: 18px;
+		width: 100%;
+	}
 }
 
 tr.note a {
@@ -626,6 +663,14 @@ section#checkout select {
 	height: 40px;
 }
 
+section#checkout div#ideal_bank.error select {
+	border: 2px solid red;
+}
+
+section#checkout div#ideal_bank.error h2 {
+	color: red;
+}
+
 section#checkout {
 	margin-bottom: 190px;
 }
@@ -657,11 +702,13 @@ section#checkout div#options > label {
 	width: 100%;
 }
 
-section#checkout div#options div#factuuradres {
+section#checkout div#options div#factuuradres,
+div#options div#password {
 	display: none;
 }
 
-section#checkout div#options div#factuuradres.show {
+section#checkout div#options div#factuuradres.show,
+div#options div#password.show {
 	display: block;
 }
 
@@ -771,6 +818,10 @@ section#checkout label {
 	font-size: 14px;
 }
 
+section#checkout label.error {
+	color: red;
+}
+
 section#checkout label.clear {
 	clear: both;
 }
@@ -792,6 +843,16 @@ section#checkout input[type='password'] {
 	width: 50%;
 	margin-bottom: 8px;
 }
+
+section#checkout div#password input[type='password'] {
+	width: 100%;
+}
+
+span.pass_req {
+	font-style: italic;
+	font-size: 12px;
+}
+
 
 section#checkout label#huisnummer,
 section#checkout label#toevoeging  {
@@ -1808,7 +1869,8 @@ section#cart input.amount:hover {
 
 div.add_to_cart form input.cta,
 section#cart div#coupons input.cta,
-section#formfields input.cta {
+section#formfields input.cta,
+form.validate input.cta {
 	margin-top: 15px;
 	text-align: center;
 	border: 2px solid #FF741F;
@@ -1818,6 +1880,14 @@ section#formfields input.cta {
 	color: #FF741F;
 	text-transform: uppercase;
 	background: none;
+}
+
+div#method label.error {
+	border: 2px solid red;
+}
+
+form.validate input.cta {
+	padding: 9px 25px 10px 25px;
 }
 
 section#cart table input.cta {

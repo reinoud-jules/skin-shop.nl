@@ -163,7 +163,7 @@
 
 
 		<section id="checkout" class="product_section">
-			<form class="checkout">
+			<form class="checkout validate" id="checkout_2">
 			<div class="inner_wrap">
 				<h1>Afrekenen</h1>
 				<nav id="checkout">
@@ -186,10 +186,10 @@
 						<input type="radio" name="method" value="creditcard"> Credit Card
 						</label>
 					</div>
-					<div id="ideal_bank">
+					<div id="ideal_bank" class="hidden">
 						<h2>Selecteer uw bank</h2>
 						<select>
-							<option>Selecteer bank...</option>
+							<option value="0">Selecteer bank...</option>
 							<option>ABN Amro</option>
 							<option>Rabobank</option>
 						</select>
@@ -216,7 +216,7 @@
 				</aside>
 				
 				<div id="actions">
-					<a href="#" class="cta turqoise">Terug naar mandje</a> <a href="#" class="cta">Verder →</a>
+					<a href="#" class="cta turqoise">Terug naar mandje</a> <input type="submit" value="Verder →" class="cta">
 				</div>
 				
 			</div>

@@ -163,53 +163,55 @@
 
 
 		<section id="checkout" class="product_section">
-			<form class="checkout">
+			<form class="checkout validate" id="checkout_1">
 			<div class="inner_wrap">
 				<h1>Afrekenen</h1>
 				<nav id="checkout">
 					<a href="#" class="here">1. Verzending</a> <a href="#">2. Betaalwijze</a> <a href="#">3. Overzicht &amp; bevestigen</a>
 				</nav>
 				<section id="formfields">
-					<h2>Bezorgadres</h2>
-					<label>Voornaam<br>
-					<input type="text" name="voornaam" class="required"></label>
-					
-					<label>Achternaam<br>
-					<input type="text" name="achternaam" class="required"></label>
-					
-					<label>Bedrijfsnaam (optioneel)<br>
-					<input type="text" name="achternaam" class=""></label>
-					
-					<label class="clear">Straatnaam<br>
-					<input type="text" name="straat" class="required"></label>
-					
-					<label id="huisnummer">Huisnummer<br>
-					<input type="text" name="huisnummer" class="required"> 
-					</label>
-					
-					<label id="toevoeging">Toevoeging<br>
-					<input type="text" name="toevoeging" class="required"> 
-					</label>
-					
-					<label id="postcode">Postcode<br>
-					<input type="text" name="postcode" class="required"> 
-					</label>
-					
-					<label id="plaats">Plaats<br>
-					<input type="text" name="plaats" class="required"> 
-					</label>
-					
-					<label id="land">Land<br>
-					<input type="text" name="land" class="required" value="Nederland"> 
-					</label>
-					
-					<label id="">Telefoon<br>
-					<input type="text" name="telefoon" class="required" value=""> 
-					</label>
-					
-					<label class="" id="">E-mailadres<br>
-					<input type="text" name="e-mail" class="required" value=""> 
-					</label>
+					<div id="bezorgadres">
+						<h2>Bezorgadres</h2>
+						<label>Voornaam<br>
+						<input type="text" name="voornaam" class="required" data-format="name"></label>
+						
+						<label>Achternaam<br>
+						<input type="text" name="achternaam" class="required" data-format="name"></label>
+						
+						<label>Bedrijfsnaam (optioneel)<br>
+						<input type="text" name="bedrijfsnaam" class="" data-format="name"></label>
+						
+						<label class="clear">Straatnaam<br>
+						<input type="text" name="straat" class="required" data-format="street"></label>
+						
+						<label id="huisnummer">Huisnummer<br>
+						<input type="text" name="huisnummer" class="required" data-format="address_number"> 
+						</label>
+						
+						<label id="toevoeging">Toevoeging<br>
+						<input type="text" name="toevoeging" class="" data-format="string"> 
+						</label>
+						
+						<label id="postcode">Postcode<br>
+						<input type="text" name="postcode" class="required" data-format="zip"> 
+						</label>
+						
+						<label id="plaats">Plaats<br>
+						<input type="text" name="plaats" class="required" data-format="city"> 
+						</label>
+						
+						<label id="land">Land<br>
+						<input type="text" name="land" class="required success" value="Nederland" data-format="country"> 
+						</label>
+						
+						<label id="">Telefoon<br>
+						<input type="text" name="telefoon" class="required" value="" data-format="phone"> 
+						</label>
+						
+						<label class="" id="">E-mailadres<br>
+						<input type="text" name="e-mail" class="required" value="" data-format="email"> 
+						</label>
+					</div>
 					
 					<div id="options">
 						<label>
@@ -217,53 +219,60 @@
 						<input type="checkbox" checked id="factuuradres"> Factuuradres is gelijk aan bezorgadres.</label>
 						<div id="factuuradres">
 							<label>Voornaam<br>
-							<input type="text" name="voornaam" class="required"></label>
+							<input type="text" name="factuur_voornaam" class="required" data-format="name"></label>
 							
 							<label>Achternaam<br>
-							<input type="text" name="achternaam" class="required"></label>
+							<input type="text" name="factuur_achternaam" class="required" data-format="name"></label>
 							
 							<label>Bedrijfsnaam (optioneel)<br>
-							<input type="text" name="achternaam" class=""></label>
+							<input type="text" name="factuur_bedrijfsnaam" class="" data-format="name"></label>
 							
 							<label class="clear">Straatnaam<br>
-							<input type="text" name="straat" class="required"></label>
+							<input type="text" name="factuur_straat" class="required" data-format="street"></label>
 							
 							<label id="huisnummer">Huisnummer<br>
-							<input type="text" name="huisnummer" class="required"> 
+							<input type="text" name="factuur_huisnummer" class="required" data-format="address_number"> 
 							</label>
 							
 							<label id="toevoeging">Toevoeging<br>
-							<input type="text" name="toevoeging" class="required"> 
+							<input type="text" name="factuur_toevoeging" class="" data-format="string"> 
 							</label>
 							
 							<label id="postcode">Postcode<br>
-							<input type="text" name="postcode" class="required"> 
+							<input type="text" name="factuur_postcode" class="required" data-format="zip"> 
 							</label>
 							
 							<label id="plaats">Plaats<br>
-							<input type="text" name="plaats" class="required"> 
+							<input type="text" name="factuur_plaats" class="required" data-format="city"> 
 							</label>
 							
 							<label id="land">Land<br>
-							<input type="text" name="land" class="required" value="Nederland"> 
+							<input type="text" name="factuur_land" class="required success" value="Nederland" data-format="country"> 
 							</label>
 							
 							<label id="">Telefoon<br>
-							<input type="text" name="telefoon" class="required" value=""> 
+							<input type="text" name="factuur_telefoon" class="required" value="" data-format="phone"> 
 							</label>
 							
 							<label class="" id="">E-mailadres<br>
-							<input type="text" name="e-mail" class="required" value=""> 
+							<input type="text" name="factuur_e-mail" class="required" value="" data-format="email"> 
 							</label>
 						</div>
 						
 						<label>
 						<h2>Inpakken als cadeau</h2>
-						<input type="checkbox"> Ja, ik wil dat mijn bestelling als cadeau wordt ingepakt <span class="extra">(+ €1,00)</span></label>
+						<input type="checkbox" name="cadeau"> Ja, ik wil dat mijn bestelling als cadeau wordt ingepakt <span class="extra">(+ €1,00)</span></label>
 						
 						<label>
 						<h2>Ik wil mezelf registreren bij Skin-shop.nl</h2>
-						<input type="checkbox"> Ja, ik wil mezelf graag registeren zodat ik mijn bestelstatus en -historie kan inzien en kans maak op kortingen op exclusieve aanbiedingen.</label>
+						<input type="checkbox" name="register" id="register"> Ja, ik wil mezelf graag registeren zodat ik mijn bestelstatus en -historie kan inzien en kans maak op kortingen op exclusieve aanbiedingen.</label>
+						<div id="password">
+							<label>Kies een wachtwoord<br>
+							<input type="password" name="voornaam" class="required" id="password_original" data-format="password"><br><span class="pass_req">Minimaal één cijfer, hoofdletter en speciaal karakter, langer dan 8 tekens.</span></label>
+							
+							<label>Herhaal wachtwoord<br>
+							<input type="password" name="achternaam" class="required" data-format="password_check"><br><span class="pass_req">Wachtwoorden moeten identiek zijn.</span></label>
+						</div>
 					
 					</div>
 				</section>
@@ -288,7 +297,7 @@
 				</aside>
 				
 				<div id="actions">
-						<a href="#" class="cta turqoise">Terug naar mandje</a> <a href="#" class="cta">Verder →</a>
+						<a href="#" class="cta turqoise">Terug naar mandje</a> <input type="submit" value="Verder →" class="cta">
 					</div>
 			</div>
 			</form>
