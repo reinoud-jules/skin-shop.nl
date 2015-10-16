@@ -21,6 +21,21 @@ var scroll_int;
 
 $(document).ready(function() {
 	
+	/* ===================================== */
+	/* >>>>>>>> PRODUCT VIEW LIST/GRID
+	/* ===================================== */
+	$("div#view a").click(function(a) {
+		a.preventDefault();
+		$("div#view a").removeClass("active").addClass("inactive");
+		$(this).removeClass("inactive").addClass("active");
+		
+		if($(this).hasClass("grid")) {
+			$("div.prod_grid").removeClass("list");
+		} else {
+			$("div.prod_grid").addClass("list");
+		}
+	});
+	
 	
 	/* ===================================== */
 	/* >>>>>>>> ACCOUNT
@@ -203,6 +218,7 @@ $(document).ready(function() {
 	});
 	
 	
+	
 	if($("div#datepicker").length != 0) {
 		var today = new Date();
 		$("div#datepicker").datepicker({
@@ -219,6 +235,7 @@ $(document).ready(function() {
 		
 		$("div#datepicker").datepicker("setDate", 1);
 	}
+
 	
 	/* ===================================== */
 	/* >>>>>>>> PROD DETAIL GALLERY
@@ -342,6 +359,11 @@ function update_dimensions() {
 	ww = $(window).width();
 	wh = $(window).height();
 	fh = $("body > footer").height();
+	console.log("ww: " + ww);
+	if(ww <= 490) {
+		$("div.prod_grid").removeClass("list");
+	}
+	
 	/* ===================================== */
 	/* >>>>>>>> HOME ADS:
 	/* ===================================== */
@@ -364,7 +386,6 @@ function update_dimensions() {
 			height: 370
 		});
 	}
-
 }
 
 
