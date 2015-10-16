@@ -203,21 +203,22 @@ $(document).ready(function() {
 	});
 	
 	
-	
-	var today = new Date();
-	$("div#datepicker").datepicker({
-		minDate: today,
-		maxDate: 7,
-		beforeShowDay: function(date) {
-	        var day = date.getDay();
-	        return [(day != 0), ''];
-	    },
-	    onSelect: function(dateTxt, inst) {
-		    $("input#afleverdag").val(dateTxt);
-	    }
-	}, $.datepicker.regional['nl']);
-	
-	$("div#datepicker").datepicker("setDate", 1);
+	if($("div#datepicker").length != 0) {
+		var today = new Date();
+		$("div#datepicker").datepicker({
+			minDate: today,
+			maxDate: 7,
+			beforeShowDay: function(date) {
+		        var day = date.getDay();
+		        return [(day != 0), ''];
+		    },
+		    onSelect: function(dateTxt, inst) {
+			    $("input#afleverdag").val(dateTxt);
+		    }
+		}, $.datepicker.regional['nl']);
+		
+		$("div#datepicker").datepicker("setDate", 1);
+	}
 	
 	/* ===================================== */
 	/* >>>>>>>> PROD DETAIL GALLERY
